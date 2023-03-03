@@ -1,5 +1,6 @@
 '''
 Tic Tac Toe Game!!!
+By Sachi Fujimoto
 '''
 from Board import Board
 import random
@@ -9,21 +10,19 @@ print()
 
 if __name__ == "__main__":
 
-  # eri's code
   mode = 0
   while(mode not in [1, 2]):
     mode = int(input("How many players?: "))
-  # end of eri's code
   
   Game = Board()
   Game.display()
 
   XorO = ["X", "O"]
   player = random.choice(XorO)
-  # eri's code
+
   if mode == 1:
     Game.AI = player
-  # end of eri's code
+
   round = 1
   
   # (think of some condition to keep playing):
